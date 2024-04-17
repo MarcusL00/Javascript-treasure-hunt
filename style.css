@@ -1,0 +1,34 @@
+#myCanvas{
+height: 700px; 
+width: 1200px;
+border: 1px solid black;
+
+}
+
+#main {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    height: 700px;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+#btn{
+    height: 50px;
+    width: 150px;
+}
+p{
+    font-size: larger;
+
+}
+#intro{
+    text-align: center;
+}
+#game{
+    text-align: center;
+}

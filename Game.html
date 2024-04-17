@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let the hunt begin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="myMap()"> <!-- Call myMap() function when the page loads -->
+    <div id="intro">
+        <p>Help the pirates find the treasure chest</p>
+        <p>Your shovel is in rough shape it only have 5 uses left</p>
+        <p>use it with caution</p>
+    </div>
+
+    <div id="game">
+        <canvas id="myCanvas"></canvas>
+    </div>
+
+    <img id="map" src="Assets/treasuremap.png"  alt="picture of a treasure map" style="display: none;">
+
+    <script>
+        function myMap(){
+            let c = document.getElementById('myCanvas');
+            let ctx = c.getContext('2d');
+            let img = document.getElementById('map');
+            img.onload = function() {
+                ctx.drawImage(img, 10, 10); 
+            };
+        }
+    </script>
+</body>
+</html>
